@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="CENTER" animated="false" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" text="Queue Manager" textFill="#4f083c" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="clients" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="172.0" promptText="No. of clients" />
+            <TextField fx:id="queues" layoutX="13.0" layoutY="68.0" prefHeight="30.0" prefWidth="173.0" promptText="No. of queues" />
+            <TextField fx:id="simulationInterval" layoutX="12.0" layoutY="125.0" prefHeight="30.0" prefWidth="175.0" promptText="Simulation interval" />
+            <TextField fx:id="minimumArrivalTime" layoutX="12.0" layoutY="182.0" prefHeight="30.0" prefWidth="176.0" promptText="Minimum arrival time" />
+            <TextField fx:id="maximumArrivalTime" layoutX="13.0" layoutY="242.0" prefHeight="30.0" prefWidth="176.0" promptText="Maximum arrival time" />
+            <TextField fx:id="minimumServiceTime" layoutX="14.0" layoutY="299.0" prefHeight="30.0" prefWidth="176.0" promptText="Minimum service time" />
+            <TextField fx:id="maximumServiceTime" layoutX="13.0" layoutY="357.0" prefHeight="30.0" prefWidth="177.0" promptText="Maximum service time" />
+            <Button layoutX="38.0" layoutY="427.0" mnemonicParsing="false" onAction="#startSimulation" text="Start simulation" textFill="#460851">
+               <font>
+                  <Font name="Bodoni MT" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="results" editable="false" layoutX="366.0" layoutY="13.0" prefHeight="492.0" prefWidth="370.0" />
+            <Line endX="-43.000030517578125" endY="412.3999328613281" layoutX="328.0" layoutY="74.0" startX="-43.000030517578125" startY="-51.60002136230469" stroke="#691364" />
+            <Line endX="-4.5999755859375" endY="436.7999572753906" layoutX="261.0" layoutY="49.0" startX="-4.5999755859375" startY="-26.800031661987305" stroke="#691364" />
+            <Line endX="-43.000030517578125" endY="412.3999328613281" layoutX="355.0" layoutY="73.0" startX="-43.000030517578125" startY="-51.60002136230469" stroke="#691364" />
+         </children></AnchorPane>
+  </content>
+   <font>
+      <Font name="Bodoni MT Italic" size="18.0" />
+   </font>
+</TitledPane>
